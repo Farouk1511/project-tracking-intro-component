@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+li {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  color: hsl(230, 29%, 20%);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 200px;
+}
+
+nav ul li {
+  cursor: pointer;
+  list-style: none;
+  float: left;
+  margin-right: 30px;
+  text-transform: uppercase;
+}
+
+nav ul li:hover {
+  border-bottom: 1px solid hsl(230, 29%, 20%);
+}
+
+nav ul li:nth-child(4) {
+  font-size: 120%;
+}
+nav ul li:nth-child(4):hover {
+  border: none;
+  cursor: default;
+}
+
+nav ul li:last-child,
+nav ul li:nth-of-type(4) {
+  color: hsl(231, 7%, 65%);
+}
+
+nav ul li:last-child:hover {
+  border-bottom: 1px solid hsl(231, 7%, 65%);
+}
+
+.background-image {
+  position: absolute;
+  display: block;
+  width: 700px;
+  height: 400px;
+  background-color: hsl(207, 33%, 95%);
+  z-index: -10;
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 100px;
+}
+
+.container {
+  position: relative;
+  display: flex;
+
+  padding: 30px 200px;
+}
+
+.container img {
+  position: absolute;
+  width: 800px;
+  right: -200px;
+  top: 150px;
+}
+
+.main-text {
+  margin-top: 150px;
+}
+
+.main-text p:first-child {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: hsl(231, 7%, 65%);
+  font-size: 80%;
+  margin-bottom: 20px;
+}
+
+.main-text p:first-child span {
+  background-color: #000;
+  color: #fff;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  padding: 10px;
+  letter-spacing: normal;
+  font-weight: 700;
+  margin-right: 10px;
+  font-size: 100%;
+  font-weight: bolder;
+}
+
+.main-text h1 {
+  font-size: 320%;
+  text-transform: uppercase;
+  margin: 0;
+  width: 60%;
+}
+
+.main-text p:nth-of-type(2) {
+  color: hsl(231, 7%, 65%);
+  width: 40%;
+  margin-bottom: 50px;
+}
+
+.main-text .btn {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: #fff;
+  background-color: hsl(0, 100%, 68%);
+  border: 0;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: hsla(0, 100%, 68%, 0.836);
+}
+
+.main-text span:last-child {
+  color: hsl(231, 7%, 65%);
+  text-transform: uppercase;
+  font-size: 70%;
+  letter-spacing: 4px;
+  word-spacing: -1px;
+}
