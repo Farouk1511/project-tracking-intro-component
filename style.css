@@ -12,6 +12,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
+  overflow: hidden;
 }
 
 h1,
@@ -58,6 +59,43 @@ nav ul li:last-child:hover {
   border-bottom: 1px solid hsl(231, 7%, 65%);
 }
 
+.hamburger {
+  width: 30px;
+  height: 25px;
+  display: none;
+}
+
+.hidden-nav {
+  position: absolute;
+  display: none;
+  top: 10%;
+  left: 10%;
+  background-color: #fff;
+  box-shadow: 0 18px 48px 12px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  text-align: center;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+.hidden-nav ul {
+  padding: 0;
+}
+
+.hidden-nav ul li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.hidden-nav ul li:last-child {
+  border-top: 1px solid hsl(231, 7%, 65%);
+  color: hsl(231, 7%, 65%);
+}
+
+.hidden-nav.show {
+  display: block;
+}
+
 .background-image {
   position: absolute;
   display: block;
@@ -79,7 +117,7 @@ nav ul li:last-child:hover {
 
 .container img {
   position: absolute;
-  width: 800px;
+  width: 900px;
   right: -200px;
   top: 150px;
 }
@@ -113,7 +151,7 @@ nav ul li:last-child:hover {
 }
 
 .main-text h1 {
-  font-size: 320%;
+  font-size: 500%;
   text-transform: uppercase;
   margin: 0;
   width: 60%;
@@ -152,4 +190,12 @@ nav ul li:last-child:hover {
   font-size: 70%;
   letter-spacing: 4px;
   word-spacing: -1px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }

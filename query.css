@@ -1,0 +1,107 @@
+@media only screen and (max-width: 1440px) {
+  .main-text h1 {
+    font-size: 350%;
+  }
+  .container img {
+    width: 800px;
+  }
+  .container {
+    padding: 20px 80px;
+  }
+}
+/*Big Tablets to 1200px (widths smaller than 1140 row)*/
+@media only screen and (max-width: 1200px) {
+  .main-text p:nth-of-type(2) {
+    width: 100%;
+    margin: 20px 0;
+  }
+  header {
+    padding: 30px 80px;
+  }
+  .main-text h1 {
+    font-size: 250%;
+  }
+  .container img {
+    width: 700px;
+  }
+  .background-image {
+    width: 550px;
+  }
+}
+
+/*Small tablet to big tablet: 768px - 1023px*/
+@media only screen and (max-width: 1023px) {
+  .main-text {
+    font-size: 90%;
+  }
+
+  header {
+    padding-right: 10px;
+  }
+
+  .container img {
+    width: 550px;
+  }
+  .background-image {
+    width: 400px;
+  }
+}
+
+/*Small phones to small tablet: 481px - 767px*/
+@media only screen and (max-width: 767px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .container img {
+    position: unset;
+    width: 100%;
+  }
+  .main-text {
+    margin-top: 50px;
+    font-size: 100%;
+  }
+  .main-text h1 {
+    width: 100%;
+  }
+}
+
+/*Small phones from 0-480px*/
+@media only screen and (max-width: 480px) {
+  nav {
+    display: none;
+  }
+  .main-text p:first-child {
+    letter-spacing: 5px;
+    font-size: 70%;
+    width: 100%;
+  }
+  .main-text h1 {
+    font-size: 230%;
+  }
+  .background-image {
+    width: 250px;
+    right: -100px;
+    overflow: hidden;
+  }
+  .container img {
+    width: 120%;
+  }
+  .container {
+    padding: 15px;
+  }
+  .main-text .btn {
+    font-size: 90%;
+    padding: 15px;
+  }
+  .main-text span:last-child {
+    font-size: 50%;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  header {
+    padding: 20px 15px;
+    width: 100%;
+  }
+}
